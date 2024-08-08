@@ -1,17 +1,10 @@
 {
-    "buildCommand": "npm run build",
     "builds": [{
-        "src": "./",
-        "use": "@vercel/npm"
-    }, {
-        "src": "./api/index.js",
-        "use": "@vercel/node"
-    },{
-        "src": "./api/index.js",
+        "src": "./src/index.ts",
         "use": "@vercel/node"
     }],
     "routes": [{
         "src": "/(.*)",
-        "dest": "/api"
+        "dest": "/src"
     }]
 }
