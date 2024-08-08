@@ -1,6 +1,9 @@
 {
     "buildCommand": "npm run build",
     "builds": [{
+        "src": "./",
+        "use": "@vercel/npm"
+    }, {
         "src": "./api/index.js",
         "use": "@vercel/node"
     },{
