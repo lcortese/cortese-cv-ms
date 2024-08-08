@@ -5,6 +5,7 @@
   "main": "dist/index.ts",
   "scripts": {
     "start": "tsc --watch & nodemon dist",
+    "build": "tsc",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
